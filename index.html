@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Greetings</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>Enter your name to receive a personalized greeting:</p>
+    <form action="/greet/" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Greet Me!</button>
+    </form>
+</body>
+</html>
